@@ -1,0 +1,130 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+    --branco: #ffffff;
+    --cinza: #aaa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+body {
+    background: var(--preto);
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, sans-serif;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--branco);
+}
+
+.logo-container img {
+    width: 300px;
+    height: 90px;
+    margin-left: 5px;
+}
+
+h3.titulo, span {
+    color: var(--branco);
+    margin-left: 5px;
+}
+
+.classificacao {
+    color: var(--branco);
+    margin: 10px auto;
+    font-weight: 900;
+}
+
+.idadeindicada {
+    border: 1px solid var(--cinza);
+    padding: 5px;
+}
+.descricao {
+    width: 85%;
+}
+
+p {
+    color: var(--branco);
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    margin-left: 5px;
+}
+
+/* Filme principal */
+.filme-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 600px;
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../assets/image/banner.jpg);
+    background-size: cover;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.filme-principal .container {
+    margin-top: 200px;
+}
+
+.titulo {
+    font-size: 30px;
+    margin: 15px 0 15px;
+}
+
+.botao {
+    background-color: rgba(255, 255, 255, 0.5); /* Branco com 50% de transparência */
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    transition: 2s ease all;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
